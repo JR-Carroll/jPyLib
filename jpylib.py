@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # Filename:  jpylib.py
 
-import mkdir
+import makekdir
 
 version = '1.0'
 

@@ -1,6 +1,8 @@
 import os
 
 def initvars():
+    """Sets the basic variables!"""
+    
     year = raw_input('Year? ')
     client = raw_input('Client? ')
     path = raw_input('Path? ')

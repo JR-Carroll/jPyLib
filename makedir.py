@@ -17,10 +17,10 @@ def main (year, client, path = '/'):
 
     try:
         for i in months:
-        os.mkdir((path + client + ' ' + year + ' ' + str(monthCount).zfill(2) + ' ' + i))
-        monthCount += 1
+            os.mkdir((path + client + ' ' + year + ' ' + str(monthCount).zfill(2) + ' ' + i))
+            monthCount += 1
     except:
-        print("Cannot create these directorirs!")
+        print("Cannot create these directories!")
 
 
 if __name__ == '__main__':

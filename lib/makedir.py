@@ -2,16 +2,16 @@
 
 import os
 
-def initvars():
+def main():
     """Sets the basic variables!"""
     
     year = raw_input('Year? ')
     client = raw_input('Client? ')
     path = raw_input('Path? ')
 
-    main(year, client, path)
+    createDir(year, client, path)
 
-def main (year, client, path = '/'):
+def createDir (year, client, path = '/'):
     months = ('Janurary', 'February', 'March', 'April', 'May', 'June', 'July',
           'August', 'September', 'October', 'November', 'December')
 
@@ -22,10 +22,8 @@ def main (year, client, path = '/'):
             os.mkdir((path + client + ' ' + year + ' ' + str(monthCount).zfill(2) + ' ' + i))
             monthCount += 1
     except:
-        print("Cannot create these directories!")
+        print("Cannot create these directories because I said so!!!")
 
 
 if __name__ == '__main__':
-    initvars()
-
-
+    main()

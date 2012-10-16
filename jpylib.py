@@ -1,7 +1,8 @@
 #!/usr/bin/python
-# Filename:  jpylib.py
+# Filename:  jPyLib.py
 
-import makekdir
+import lib.makedir
+import lib.copyfiles
 
 version = '1.0'
 author = 'J. R. Carroll'
